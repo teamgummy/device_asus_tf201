@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<permissions>
+    <!-- hardware extras for the tf201 -->
+    <feature name="eos.hardware.dock" />
+    <feature name="eos.hardware.hall_sensor" />
+    <feature name="eos.hardware.keyboard" />
+    <feature name="eos.hardware.fw.dock_ec" />
+    <feature name="eos.hardware.fw.pad_ec" />
+    <feature name="eos.hardware.fw.camera_isp" />
+    <feature name="eos.hardware.fw.touch" />
+    <feature name="eos.hardware.cpu_mode" />
+    <feature name="eos.hardware.battery.dock" />
+    <feature name="eos.hardware.display.super_ips" />
+    <feature name="eos.hardware.wifi.direct" />
+</permissions>
