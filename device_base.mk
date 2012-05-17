@@ -134,8 +134,4 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product-if-exists, vendor/asus/tf201/device-vendor.mk)
 
-ifneq ($(EOS_RELEASE),)
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rommanager.developerid=teameos \
-    ro.modversion=Eos-$(EOS_RELEASE)-TF201
-endif
+
