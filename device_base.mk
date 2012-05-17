@@ -46,16 +46,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/init.cardhu.keyboard.rc:root/init.cardhu.keyboard.rc \
     $(LOCAL_PATH)/ramdisk/init.cardhu.usb.rc:root/init.cardhu.usb.rc \
     $(LOCAL_PATH)/ramdisk/ueventd.cardhu.rc:root/ueventd.cardhu.rc \
-    $(LOCAL_PATH)/ramdisk/sbin/keyswap::root/sbin/keyswap
+	$(LOCAL_PATH)/ramdisk/sbin/keyswap::root/sbin/keyswap
 
 # Misc
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/etc/asound.conf:system/etc/asound.conf \
-    $(LOCAL_PATH)/etc/cpu1.sh:system/bin/cpu1.sh \
-    $(LOCAL_PATH)/etc/cpu2.sh:system/bin/cpu2.sh \
-    $(LOCAL_PATH)/etc/cpu3.sh:system/bin/cpu3.sh \
-    $(LOCAL_PATH)/etc/cpu4.sh:system/bin/cpu4.sh \
-    $(LOCAL_PATH)/etc/cpu5.sh:system/bin/cpu5.sh \
     $(LOCAL_PATH)/etc/vold.fstab:system/etc/vold.fstab \
     $(LOCAL_PATH)/etc/nvram_nh615.txt:system/etc/nvram_nh615.txt \
     $(LOCAL_PATH)/etc/gps/gpsconfig.xml:system/etc/gps/gpsconfig.xml \
