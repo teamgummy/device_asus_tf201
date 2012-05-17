@@ -42,8 +42,6 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk files
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/ramdisk/init:root/init \
-    $(LOCAL_PATH)/ramdisk/init.cardhu.cpu.rc:root/init.cardhu.cpu.rc \
     $(LOCAL_PATH)/ramdisk/init.cardhu.rc:root/init.cardhu.rc \
     $(LOCAL_PATH)/ramdisk/init.cardhu.keyboard.rc:root/init.cardhu.keyboard.rc \
     $(LOCAL_PATH)/ramdisk/init.cardhu.usb.rc:root/init.cardhu.usb.rc \
@@ -131,6 +129,15 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 # Bluetooth config file
 PRODUCT_COPY_FILES += \
     system/bluetooth/data/main.nonsmartphone.conf:system/etc/bluetooth/main.conf \
+	
+# Tegra 3 spacific overrides
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.tegra.nvmmlite=1
+
+# Prime spacific overrides
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.epad.model=TF201 \
+	ro.product.model=TF201
 
 $(call inherit-product-if-exists, vendor/asus/tf201/device-vendor.mk)
 
