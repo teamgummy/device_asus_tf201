@@ -30,16 +30,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/etc/firmware/bcm4329.hcd:system/etc/firmware/bcm4329.hcd \
     $(LOCAL_PATH)/etc/bluetooth/bdaddr:system/etc/bluetooth/bdaddr
 
-# Modules
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/lib/modules/baseband_usb_chr.ko:system/lib/modules/baseband_usb_chr.ko \
-#    $(LOCAL_PATH)/lib/modules/baseband-xmm-power2.ko:system/lib/modules/baseband-xmm-power2.ko \
-#    $(LOCAL_PATH)/lib/modules/raw_ip_net.ko:system/lib/modules/raw_ip_net.ko \
-#    $(LOCAL_PATH)/lib/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
-#    $(LOCAL_PATH)/lib/modules/tcrypt.ko:system/lib/modules/tcrypt.ko \
-#    $(LOCAL_PATH)/lib/modules/texfat.ko:system/lib/modules/texfat.ko \
-#    $(LOCAL_PATH)/lib/modules/tntfs.ko:system/lib/modules/tntfs.ko
-
 # Ramdisk files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/init.cardhu.rc:root/init.cardhu.rc \
@@ -110,7 +100,7 @@ PRODUCT_PACKAGES := \
     libaudioutils \
     libinvensense_mpl \
     blobpack_tfp \
-    AutoParts
+    AutoParts_tfp
 
 PRODUCT_CHARACTERISTICS := tablet
 
