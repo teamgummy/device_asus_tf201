@@ -27,7 +27,8 @@ include $(CLEAR_VARS)
 ALL_PREBUILT += $(INSTALLED_KERNEL_TARGET)
 
 subdir_makefiles:= \
-    $(LOCAL_PATH)/blobpack/Android.mk
+    $(LOCAL_PATH)/blobpack/Android.mk \
+    $(LOCAL_PATH)/AutoParts/Android.mk
 
 include $(subdir_makefiles)
 
