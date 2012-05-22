@@ -30,6 +30,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/etc/firmware/bcm4329.hcd:system/etc/firmware/bcm4329.hcd \
     $(LOCAL_PATH)/etc/bluetooth/bdaddr:system/etc/bluetooth/bdaddr
 
+# Modules
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/lib/modules/texfat.ko:system/lib/modules/texfat.ko \
+   $(LOCAL_PATH)/lib/modules/tntfs.ko:system/lib/modules/tntfs.ko
+
 # Ramdisk files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/init.cardhu.rc:root/init.cardhu.rc \
