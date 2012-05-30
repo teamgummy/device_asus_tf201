@@ -79,6 +79,7 @@ on boot
     chown system system /sys/devices/nvhost/tegradc.0/smartdimmer/enable
     chown system system /sys/devices/nvhost/tegradc.0/smartdimmer/aggressiveness
     chown system system /sys/devices/nvhost/tegradc.0/smartdimmer/phase_in_adjustments
+    chown system system /sys/devices/nvhost/tegradc.0/smartdimmer/bin_width
 
 # power
     chown system system /sys/kernel/tegra_cap/core_cap_level
@@ -105,6 +106,10 @@ on boot
     chmod 666 /dev/nvhost-vi
     chown system system /sys/bus/iio/devices/device0/als_ir_mode
     chown system system /sys/bus/iio/devices/device0/proximity_enable
+	
+# Display Settings
+    write /sys/devices/nvhost/tegradc.0/smartdimmer/enable 1
+    write /sys/devices/nvhost/tegradc.0/smartdimmer/bin_width 1
 
 # Power management settings
     chown system system /sys/module/cpu_tegra3/parameters/no_lp
